@@ -12,8 +12,8 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-src/expenses.json
-src/backups
+expenses.json
+backups
 
 # OS
 .DS_Store
