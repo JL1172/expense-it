@@ -183,7 +183,11 @@ class App {
     if (proceedWithAmount === false) this.addExpense();
 
     this.renderHeading();
-    const payload = { date, description, amount };
+    const payload = {
+      date,
+      description,
+      amount: Number(amount).toFixed(2) + '',
+    };
     const payloadToWrite = this.expenses.map((n) => ({
       date: n[0],
       description: n[1],
